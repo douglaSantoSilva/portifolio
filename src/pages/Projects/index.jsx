@@ -1,6 +1,7 @@
 import {Container, Content} from './styles'
 import { Header } from '../../Components/Header'
-import { ProjectsImg } from '../../Components/ProjectsImg'
+import { Carousel } from '../../Components/Carousel'
+
 
 export function Projects() {
   return(
@@ -8,7 +9,7 @@ export function Projects() {
         <Header />
         <main>
           <Content>
-              <ProjectsImg />
+              <Carousel />
           </Content>
         </main>
     </Container>

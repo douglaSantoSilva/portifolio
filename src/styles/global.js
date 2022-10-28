@@ -9,10 +9,12 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-
   body {
+    background-size: 300% 300%;
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
     color: ${({theme}) => theme.COLORS.BLUE_050};
+
+    animation: colorsBackground 15s ease infinite;
   }
 
   body, button, a, textarea, input {
@@ -28,8 +30,6 @@ export default createGlobalStyle`
   }
 
   button:hover, a:hover {
-    color: ${({theme}) => theme.COLORS.PINK_900};
-    transition: 0.3s;
+    
   }
-
 `

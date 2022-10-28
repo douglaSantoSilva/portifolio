@@ -1,90 +1,108 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
-    
+    width: 100vw;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-items: center;
     align-content: center;
-  
-    width: 100%;
-    height: 388px;
+    overflow-x: scroll;
     gap: 20px;
-
     cursor: pointer;
-    
-    > img  {
-    width: 60px;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50px;
 
-    filter: opacity(0.5);
-    transition: 1s;
-    
+  &::-webkit-scrollbar {
+    background: transparent;
+  }
 
-    :hover{
-      width: 551px;
-      filter: opacity(1);
+  &::-webkit-scrollbar-track{
+    margin-left: 20px;
+  }
 
-      transition: 1s;
-    }}
+  &::-webkit-scrollbar-thumb{
+    border: 10px solid transparent;
+    color: white;
+    background-color:white;
+    border-radius: 12px;
+    border: 5px solid transparent;
+   
+    background-clip: padding-box;
+  }
 `
 
 export const Input = styled.div`
-
-  /* width: 100%;
-  height: 388px;
-  cursor: pointer;
-
-  > label
-   {
-    img {
-    width: 60px;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50px;
-
-    filter: opacity(0.5);
-    transition: 1s; 
-  }} */
+   width: 500px;
+   height: 100%;
+   padding: 0 48px;
+   position: relative;
+   
 
   > input {
     display: none;
   }
 
   > label {
-    height: 100%;
-    position: relative;
-    
+    cursor: pointer;
 
     h1{
       display: none;
-      left: 80px;
-      bottom: 20px;
-      position: absolute;
     }
 
-    img{  
-      height: 388px;
-      width: 60px;
+    img{
+     
+      margin-top: 50px;
+      height: 400px;
+      width: 500px;
       border-radius: 50px;
+      filter: opacity(0.5);
       object-fit: cover;
-      transition: all  0.8s  ease-in-out;
-
+      transition: all  0.3s  ease;
     }
+    
+    > a {
+      font-size: 14px;
+      position: absolute;
+      bottom: 20px;
+      padding: 12px;
+      border-radius: 20px 8px 20px 8px;
+        
+      font-weight: bold;
+      color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+      background-color:#f0f9ff;
+      
+      &:hover{
+        color: #f0f9ff;
+        background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+      }
+    
+    }
+    
+    > a:nth-child(2) {
+    left: 90px;
+    }
+
+    > a:nth-child(3) {
+    left: 210px;  
+    }
+  
   }
 
   > input:checked ~ label{
     > img{ 
-      width: 600px;
-      transition: all  0.8s   ease-in-out;
+      margin-top: 0;
+      transition: all  0.3s  ease;
+      filter: opacity(1);
+
+      box-shadow: #1f2937 0px 7px 29px 0px;
     }
 
     > h1 {
-      color: ${({theme}) => theme.COLORS.PINK_900};
+      color: ${({theme}) => theme.COLORS.BLUE_050};
       display: block;
+     
+      margin-top: 20px;
+      align-self: center;
+      text-align: center;
     }
   }
 `

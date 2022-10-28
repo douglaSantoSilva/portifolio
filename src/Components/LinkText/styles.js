@@ -4,7 +4,7 @@ export const Container = styled.a`
 
   display: flex;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
   gap: 12px;
 
   align-items: center;
@@ -17,12 +17,12 @@ export const Container = styled.a`
     color: ${({theme}) => theme.COLORS.WHITE_100};
   }
 
-  &&:hover {
-    color: ${({theme}) => theme.COLORS.PINK_900};
+  &:hover{
+    color: ${({theme}) => theme.COLORS.BLUE_500};
 
-    > svg {
-      color: ${({theme}) => theme.COLORS.PINK_900};
-      transition: 0.3s;
+    svg{
+      color:${({theme}) => theme.COLORS.BLUE_500};
     }
   }
+
 `

@@ -1,43 +1,22 @@
 import { Container, Input } from './styles'
 import BackgroundImg from '../../assets/imagem.png'
-import { useState } from 'react'
+import { imagesProjects } from '../ImageProjectsExport'
 
-
-export function ProjectsImg({isActive = false, ...rest}) {
+ export function ProjectsImg() {
   
   return(
     <Container>
-
-      <Input>
-        <input type="radio" name="slider" id='slider1' defaultChecked />
-        <label htmlFor="slider1">
-          <img src={BackgroundImg} alt=""/>
-        </label>
-      </Input>
-
-      <Input>
-        <input type="radio" name="slider" id='slider2' defaultChecked />
-        <label htmlFor="slider2">
-          <img src={BackgroundImg} alt=""/>
-        </label>
-      </Input>
-
-      <Input>
-        <input type="radio" name="slider" id='slider3' defaultChecked />
-        <label htmlFor="slider3">
-          <img src={BackgroundImg} alt=""/>
-          <h1>Testando</h1>
-        </label>
-        
-      </Input>
-
-      <Input>
-        <input type="radio" name="slider" id='slider4' defaultChecked />
-        <label htmlFor="slider4">
-          <img src={BackgroundImg} alt=""/>
-        </label>
-      </Input>
-      
+      {imagesProjects.map(
+          img => 
+          <Input>
+            <input type="radio" name="slider" id={img.id} defaultChecked/>
+            <label htmlFor={img.id}>
+            <img src={img.name} alt=""/>
+            <a href="">repositório</a>
+            <a href="">projeto</a>
+            </label>
+          </Input> 
+          )}
     </Container>
   )
 }

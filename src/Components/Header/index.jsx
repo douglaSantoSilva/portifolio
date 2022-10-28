@@ -4,13 +4,12 @@ import { FiUser, FiHome, FiBookOpen} from 'react-icons/fi'
 export function Header() {
   return(
     <Container>
-
-      <h1>&#60;&#47;Ds&#62;</h1>
+      <h1>&#60;Douglas Santos&#47;&#62;</h1>
       <Content>
           <ul>
-            <li><LinkText title='Home' icon={FiHome}/></li>
-            <li><LinkText title='Projetos' icon={FiBookOpen}/></li>
-            <li><LinkText title='Contato' icon={FiUser}/></li>
+            <li key={111}><LinkText title='Home' icon={FiHome} /></li>
+            <li key={2222}><LinkText title='Projetos' icon={FiBookOpen} /></li>
+            <li key={3333}><LinkText title='Contato' icon={FiUser} /></li>
           </ul>
       </Content>
     </Container>
