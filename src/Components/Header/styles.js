@@ -28,5 +28,4 @@ export const Content = styled.nav`
     list-style:none;
     gap: 24px;
   }
-
 `

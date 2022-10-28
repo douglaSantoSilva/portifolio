@@ -12,6 +12,7 @@ export default {
     BLUE_900: '#1f2937',
     BLUE_800: '#0c4a6e',
     BLUE_500: '#38bdf8',
+    BLUE_400: '#0e7490',
 
   }
 }

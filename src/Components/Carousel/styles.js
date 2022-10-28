@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 650px;
-  height: 480px;
+  max-width: 650px;
+  max-height: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,8 +38,28 @@ export const Container = styled.div`
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 500px;
   object-fit: cover;
+}
+
+.swiper-slide a {
+  font-size: 14px;
+  font-weight: bold;
+  
+  position: absolute;
+  padding: 8px;
+  bottom: 20px;
+  right: 20px;
+
+  border-radius: 12px 6px 12px 6px;
+  background-color: ${({theme}) => theme.COLORS.BLUE_400};
+  /* background-color: #06b6d4; Maybe this color   */
+}
+
+.anchorProject{
+ svg{
+  font-size: 24px;
+ }  
 }
 
 .swiper-pagination-bullet {
