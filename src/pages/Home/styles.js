@@ -36,7 +36,7 @@ export const Content = styled.main`
   gap: 40px;
 
   > section {
-    width: 440px;
+    width: 400px;
     text-align: justify;
     
     h1 {
