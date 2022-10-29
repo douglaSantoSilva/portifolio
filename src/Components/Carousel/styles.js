@@ -53,7 +53,6 @@ export const Container = styled.div`
 
   border-radius: 12px 6px 12px 6px;
   background-color: ${({theme}) => theme.COLORS.BLUE_400};
-  /* background-color: #06b6d4; Maybe this color   */
 }
 
 .anchorProject{

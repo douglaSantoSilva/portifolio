@@ -31,4 +31,8 @@ export default createGlobalStyle`
   button:hover, a:hover {
     
   }
+
+  .hide{
+    display: none;
+  }
 `

@@ -9,7 +9,6 @@ import "./styles.js";
 
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -19,6 +18,7 @@ export function Carousel() {
   return(
       <Container>  
         <Swiper
+          loop={true}
           cssMode={true}
           navigation={true}
           pagination={true}
@@ -30,7 +30,13 @@ export function Carousel() {
           {imagesProjects.map(image => 
             <SwiperSlide key={image.name}> 
             <img src={image.name} alt="" /> 
-              <LinkText className='anchorProject' title='Repositório' icon={FiFolder} /> 
+              <LinkText 
+              href={image.url} 
+              className='anchorProject' 
+              title='Repositório' 
+              icon={FiFolder}
+              target="_blank"
+              /> 
             </SwiperSlide> 
           )}
         </Swiper>

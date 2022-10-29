@@ -1,13 +1,11 @@
 export default {
   COLORS: {
     BACKGROUND_900: '#18181B',
-    BLUE_050: '#ECFEFF',
+    BLUE_050: '#f5f5f5',
     WHITE_100: '#FBFBFB',
     WHITE: '#FFFFFF',
     
-    
     GRAY_100: '#cbd5e1',
-    PINK_900: '#38bdf8',
     
     BLUE_900: '#1f2937',
     BLUE_800: '#0c4a6e',

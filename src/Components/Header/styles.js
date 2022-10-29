@@ -5,6 +5,7 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   grid-area: header;
   border-bottom-width: 1px;
@@ -20,9 +21,28 @@ export const Container = styled.header`
     margin-right: 144px;
     transition: 1s;
   }
+
+  .anchorNav:hover{
+    color: ${({theme}) => theme.COLORS.BLUE_500};  
+    svg {
+      color: ${({theme}) => theme.COLORS.BLUE_500};
+    }}
+
+  .menuMobile{
+    display: none;
+  }
+
+  @media (max-width:750px) {
+    .navListHeader {
+    display: none;
+    }
+
+    .menuMobile{
+    display: flex;
+  }}
 `
+
 export const Content = styled.nav`
-  
   > ul {
     display: flex;
     list-style:none;

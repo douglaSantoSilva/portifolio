@@ -8,31 +8,31 @@ import img7 from '../../assets/projetos/projeto7.png'
 
 export const imagesProjects = [
   {
-    id: 1,
-    name: img1
+    name: img1,
+    url:'https://github.com/douglaSantoSilva/Explorer/tree/master/stage_2',
   },
   {
-    id: 2,
-    name: img2
+    name: img2,
+    url:'https://github.com/douglaSantoSilva/Explorer/tree/master/stage_2',
   },
   {
-    id: 3,
-    name: img3
+    name: img3,
+    url:'https://github.com/douglaSantoSilva/Explorer/tree/master/stage_3',
   },
   {
-    id: 4,
-    name: img4
+    name: img4,
+    url:'https://github.com/douglaSantoSilva/Explorer/tree/master/stage_5',
   },
   {
-    id: 5,
-    name: img5
+    name: img5,
+    url:'https://github.com/douglaSantoSilva/Explorer/tree/master/stage_3',
   },
   {
-    id: 6,
-    name: img6
+    name: img6,
+    url:'https://github.com/douglaSantoSilva/Explorer/tree/master/stage_6',
   },
   {
-    id: 7,
-    name: img7
+    name: img7,
+    url:'https://github.com/douglaSantoSilva/Explorer/tree/master/stage_6',
   },
 ]

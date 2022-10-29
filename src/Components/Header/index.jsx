@@ -1,15 +1,19 @@
 import { Container, Content } from './styles'
 import { LinkText } from '../../Components/LinkText'
-import { FiUser, FiHome, FiBookOpen} from 'react-icons/fi'
+import { FiSmartphone, FiHome, FiBookOpen} from 'react-icons/fi'
+import { MenuMobile } from '../MenuMobile'
+
 export function Header() {
+
   return(
     <Container>
       <h1>&#60;Douglas Santos&#47;&#62;</h1>
-      <Content>
+      <MenuMobile className='Menu'/>
+      <Content className='navListHeader'>
           <ul>
-            <li key={111}><LinkText  title='Home' icon={FiHome} /></li>
-            <li key={2222}><LinkText title='Projetos' icon={FiBookOpen} /></li>
-            <li key={3333}><LinkText title='Contato' icon={FiUser} /></li>
+            <li><LinkText className="anchorNav" title='Home' icon={FiHome} /></li>
+            <li><LinkText className="anchorNav" title='Projetos' icon={FiBookOpen} /></li>
+            <li><LinkText className="anchorNav" title='Tecnologias' icon={FiSmartphone} /></li>
           </ul>
       </Content>
     </Container>
