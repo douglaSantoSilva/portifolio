@@ -8,6 +8,19 @@ export const Container = styled.div`
   "content";
 
   height: 100vh;
+
+  @media (max-width: 750px) {
+    > main {
+      flex-direction: column;
+
+     > section {
+    width: 360px;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }}}
+}
 `
 
 export const Content = styled.main`
@@ -20,7 +33,7 @@ export const Content = styled.main`
   align-items: center;
 
   > section {
-    max-width: 550px;
+    width: 550px;
     padding: 28px;
 
     border: 1px solid white;

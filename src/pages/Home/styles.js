@@ -11,7 +11,7 @@ export const Container = styled.div`
       width: 95%;
     }
 
-  @media (max-width: 700px) {
+  @media (max-width: 750px) {
     .homeMain {
       display: flex;
       align-items: center;
