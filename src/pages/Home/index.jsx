@@ -7,7 +7,8 @@ export function Home() {
   return(
   <Container>
     <Header />
-    <Content>
+    <Content className='homeMain'>
+    <img src={imgProfile} alt="" />
       <section>
         <h1>Sobre Mim</h1>
         <h2>Minas Gerais - Ribeirão das Neves</h2>
@@ -36,10 +37,9 @@ export function Home() {
               Linkein
             </a>
           </div>
-          <a href=""><FiMail className='iconStyleGit'/>douglasantosilvaemail@gmail.com</a>
+        <a href=""><FiMail className='iconStyleGit'/>douglasantosilvaemail@gmail.com</a>
         </div>
       </section>
-      <img src={imgProfile} alt="" />
     </Content>  
   </Container>
   )

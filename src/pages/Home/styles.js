@@ -6,6 +6,26 @@ export const Container = styled.div`
   grid-template-areas: 
   "header"
   "content";
+
+  > img{
+      width: 95%;
+    }
+
+  @media (max-width: 700px) {
+    .homeMain {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      flex-direction: column;
+    > section {
+      margin: 0 8px;
+    }
+    > img {
+      width: 60%;
+     }
+    }
+  }
 `
 
 export const Content = styled.main`
@@ -20,12 +40,18 @@ export const Content = styled.main`
     text-align: justify;
     
     h1 {
+      text-align: center;
       font-weight: 700;
       font-size: 40px;
     }
 
-    h2 {
-      margin-top: 8px;
+    h2:nth-child(1) {
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    h2:nth-child(2) {
+      color: ${({theme}) => theme.COLORS.BLUE_500};
     }
 
     .contact {
@@ -36,8 +62,8 @@ export const Content = styled.main`
       a {
       display: flex;
       align-items: center;
-
-      margin-top: 12px;
+      
+      margin: 12px 0;
       gap: 8px;
       color: white;
 
@@ -50,7 +76,7 @@ export const Content = styled.main`
         display: flex;
         gap: 12px;
       }
-    } 
+    }
   }
 
   .iconStyleGit {
