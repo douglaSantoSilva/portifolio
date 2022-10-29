@@ -37,6 +37,11 @@ export const Container = styled.header`
     display: none;
     }
 
+    h1 {
+      font-size: 28px;
+      margin-right: 15px;
+    }
+
     .menuMobile{
     display: flex;
   }}
