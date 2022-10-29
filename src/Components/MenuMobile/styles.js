@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
 
   position: relative;
-
   > ul {
     width: 180px;
     height: 150px;

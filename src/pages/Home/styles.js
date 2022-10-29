@@ -7,23 +7,26 @@ export const Container = styled.div`
   "header"
   "content";
 
-  > img{
-      width: 95%;
-    }
+  img {
+    max-width: 500px;
+  }
 
   @media (max-width: 750px) {
-    .homeMain {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  .homeMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
       
-      flex-direction: column;
+    flex-direction: column;
+    
     > section {
-      margin: 0 8px;
+      width: 350px;
+      margin: 0 12px;
     }
+
     > img {
       width: 60%;
-     }
+    }
     }
   }
 `

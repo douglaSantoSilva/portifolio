@@ -17,7 +17,6 @@ export const Container = styled.header`
   > h1 {
     font-weight: 700;
     font-size: 32px;
-    //maybe position fixed
     margin-right: 144px;
     transition: 1s;
   }

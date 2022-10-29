@@ -14,12 +14,17 @@ export const Container = styled.div`
       flex-direction: column;
 
      > section {
-    width: 360px;
+    width: 300px;
 
     img {
-      width: 80px;
-      height: 80px;
-    }}}
+      width: 60px;
+      height: 60px;
+    }}
+
+    > img {
+    width: 300px;
+    }
+  }
 }
 `
 
