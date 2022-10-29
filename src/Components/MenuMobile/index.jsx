@@ -19,9 +19,9 @@ export function MenuMobile() {
     <Container className='menuMobile'>
       <NavBar onClick={handleClick}/>
       <ul className='myListBar hide'>
-        <li><LinkText title='Home' /></li>
-        <li><LinkText title='Projetos' /></li>
-        <li><LinkText title='Contato' /></li>
+        <li><LinkText to='/' title='Home' /></li>
+        <li><LinkText to='/projetos' title='Projetos' /></li>
+        <li><LinkText to='/tecnologias' title='Tecnologias' /></li>
       </ul>
     </Container>
   )

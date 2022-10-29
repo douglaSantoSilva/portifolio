@@ -11,9 +11,9 @@ export function Header() {
       <MenuMobile className='Menu'/>
       <Content className='navListHeader'>
           <ul>
-            <li><LinkText className="anchorNav" title='Home' icon={FiHome} /></li>
-            <li><LinkText className="anchorNav" title='Projetos' icon={FiBookOpen} /></li>
-            <li><LinkText className="anchorNav" title='Tecnologias' icon={FiSmartphone} /></li>
+            <li><LinkText to='/' className="anchorNav" title='Home' icon={FiHome} /></li>
+            <li><LinkText to='/projetos' className="anchorNav" title='Projetos' icon={FiBookOpen} /></li>
+            <li><LinkText  to='/tecnologias' className="anchorNav" title='Tecnologias' icon={FiSmartphone} /></li>
           </ul>
       </Content>
     </Container>
