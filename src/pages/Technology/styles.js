@@ -48,6 +48,12 @@ export const Content = styled.main`
       width: 100px;
       height: 100px;
     }
+
+    .github{
+    background-color: white;
+    color: blue;
+
+    }
   }
 
   > img {
