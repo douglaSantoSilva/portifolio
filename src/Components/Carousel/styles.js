@@ -1,17 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 650px;
-  max-height: 480px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-items: center;
   
   .swiper {
-  width: 100%;
-  height: 100%;
-
+  max-width: 650px;
+  max-height: 500px;
   border-radius: 20px;
   box-shadow: ${({theme}) => theme.COLORS.BLUE_900} 0px 7px 29px 0px;
 }
@@ -51,14 +49,21 @@ export const Container = styled.div`
   bottom: 20px;
   right: 20px;
 
+  color: ${({theme}) => theme.COLORS.WHITE_100};
   border-radius: 12px 6px 12px 6px;
   background-color: ${({theme}) => theme.COLORS.BLUE_400};
 }
 
-.anchorProject{
+.anchorProject {
  svg{
   font-size: 24px;
  }  
+}
+
+a.anchorProject {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .swiper-pagination-bullet {
@@ -69,4 +74,17 @@ export const Container = styled.div`
 .swiper-pagination-bullet-active {
   background-color: ${({theme}) => theme.COLORS.BLUE_800};
 }
+
+@media (max-width: 750px) {
+
+.swiper {
+  max-width: 330px;
+  max-height: 450px;
+}
+.swiper-slide img {
+  height: 480px;
+}
+.swiper-slide a {
+  bottom: 60px;
+}}
 ` 

@@ -3,7 +3,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {imagesProjects} from '../ImageProjectsExport'
 import { FiFolder } from 'react-icons/fi'
-import { LinkText } from '../LinkText'
 
 import "./styles.js";
 
@@ -16,7 +15,7 @@ import "swiper/css/pagination";
 export function Carousel() {
   
   return(
-      <Container>  
+      <Container className='asdadsasd'>  
         <Swiper
           loop={true}
           cssMode={true}
@@ -30,13 +29,15 @@ export function Carousel() {
           {imagesProjects.map(image => 
             <SwiperSlide key={image.name}> 
             <img src={image.name} alt="" /> 
-              <LinkText 
-              href={image.url} 
+            <a 
+              href={image.url}
               className='anchorProject' 
-              title='Repositório' 
               icon={FiFolder}
               target="_blank"
-              /> 
+              >
+              <FiFolder/>
+                Repositório
+              </a>
             </SwiperSlide> 
           )}
         </Swiper>

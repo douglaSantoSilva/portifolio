@@ -12,7 +12,7 @@ export const Container = styled(Link)`
   justify-content: center;
   justify-items: center;
 
-  color: ${({theme}) => theme.COLORS.WHITE_100};
+  color: ${({theme}) => theme.COLORS.WHITE};
 
   > svg {
     color: ${({theme}) => theme.COLORS.WHITE_100};

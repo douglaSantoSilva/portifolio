@@ -3,11 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
 
   display: grid;
-  grid-template-rows: 120px auto 100px;
+  grid-template-rows: 120px auto;
   grid-template-areas: 
   "header"
-  "content"
-  "footer";
+  "content";
 
   > main {
     height: 100%;
@@ -20,7 +19,7 @@ export const Content = styled.section`
   margin: 0 auto;
  
  > div {
-  margin-top: 52px;
+  margin-top: 38px;
 
   display: flex;
   align-items: center;
