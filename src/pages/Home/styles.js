@@ -57,7 +57,7 @@ export const Content = styled.main`
       }
 
       label {
-        margin-bottom: 2px;
+        margin-bottom: 4px;
       }
 
       textarea{
@@ -67,14 +67,14 @@ export const Content = styled.main`
 
       button {
         background-color: ${({theme}) => theme.COLORS.BLUE_500};
-        margin: 8px 0;
+        margin: 12px 0;
       }
     }
 
     h1 {
       text-align: center;
       font-weight: 700;
-      font-size: 36px;
+      font-size: 32px;
     }
 
     h2:nth-child(1) {
@@ -88,7 +88,7 @@ export const Content = styled.main`
 
     .contact {
       h2{
-        font-size: 36px;
+        font-size: 32px;
       }
 
       a, p {

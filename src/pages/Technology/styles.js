@@ -8,6 +8,7 @@ export const Container = styled.div`
   "content";
 
   height: 100vh;
+  background-color: black;
 
   @media (max-width: 750px) {
     > main {

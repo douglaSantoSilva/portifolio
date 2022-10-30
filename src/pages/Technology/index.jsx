@@ -1,13 +1,13 @@
 import {Container, Content} from './styles'
 import { Header } from '../../Components/Header'
-import devTec from '../../assets/devTec.svg'
+
 
 export function Technology() {
   return(
     <Container>
       <Header />
       <Content>
-        <img src={devTec} alt="" />
+        <img src='https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/coder.gif' alt="" />
         <section>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/> 
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
