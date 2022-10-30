@@ -1,6 +1,5 @@
-import {Container, Content} from './styles'
 import { Header } from '../../Components/Header'
-
+import {Container, Content} from './styles'
 
 export function Technology() {
   return(

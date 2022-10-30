@@ -35,4 +35,14 @@ export default createGlobalStyle`
   .hide{
     display: none;
   }
+
+  @keyframes contact {
+    0% {
+      transform: translateY(25px) translateX(10px);  
+    }
+
+    100% {
+      transition: translateX(0) translateY(0);
+    }
+  }
 `

@@ -6,9 +6,8 @@ export const Container = styled.div`
   grid-template-areas: 
   "header"
   "content";
-
+  
   height: 100vh;
-  background-color: #0d1117;
 
   @media (max-width: 750px) {
     > main {
