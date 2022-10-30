@@ -95,6 +95,6 @@ a.anchorProject {
   height: 380px;
 }
 .swiper-slide a {
-  bottom: 60px;
+  bottom: 25px;
 }}
 ` 
