@@ -13,12 +13,11 @@ export function Home() {
         <h1>Sobre Mim</h1>
         <h2>Dev Front-End</h2>
         <p>
-        Desde que escrevi o meu primeiro código e 
-        imprimi meu primeiro 'hello world' me apaixonei 
-        completamente pela programação. Hoje me esforço 
-        todos os dias a fim de aprimorar minhas halidades e 
-        conquistar a minha primeira oportunidade, assim indo 
-        em busca de me tornar um excelente profissional.
+        Desde que escrevi o meu primeiro código e imprimi meu 'hello world'
+        me apaixonei completamente pela programação. Hoje me esforço todos
+        os dias, a fim de aprimorar minhas habilidades, em busca de ser um
+        excelente profissional e conquistar a minha primeira oportunidade 
+        como dev.
         </p>
         <div className='contact'>
         <form method='post' action="https://formsubmit.co/douglasantosdev@gmail.com">
