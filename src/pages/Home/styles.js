@@ -21,7 +21,6 @@ export const Container = styled.div`
     
     > section {
       width: 350px;
-      margin: 0 12px;
     }
 
     > img {
@@ -35,22 +34,52 @@ export const Content = styled.main`
   grid-area: content;
   display: flex;
 
-  margin: 80px auto 0;
-  gap: 40px;
+  margin: 40px auto 0;
+  gap: 50px;
 
   > section {
     width: 400px;
     text-align: justify;
     
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input, button, textarea {
+        width: 350px;
+        padding: 8px;
+        color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+        background-color: ${({theme}) => theme.COLORS.WHITE_100};
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
+      label {
+        margin-bottom: 2px;
+      }
+
+      textarea{
+        resize: none;
+        height: 70px;
+      }
+
+      button {
+        background-color: ${({theme}) => theme.COLORS.BLUE_500};
+        margin: 8px 0;
+      }
+    }
+
     h1 {
       text-align: center;
       font-weight: 700;
-      font-size: 40px;
+      font-size: 36px;
     }
 
     h2:nth-child(1) {
       text-align: center;
-      margin-top: 24px;
+      margin-top: 12px;
     }
 
     h2:nth-child(2) {
@@ -59,15 +88,15 @@ export const Content = styled.main`
 
     .contact {
       h2{
-        font-size: 40px;
+        font-size: 36px;
       }
 
-      a {
+      a, p {
       display: flex;
       align-items: center;
       
-      margin: 12px 0;
-      gap: 8px;
+      margin: 8px 0;
+      gap: 6px;
       color: white;
 
       img {
@@ -75,7 +104,7 @@ export const Content = styled.main`
         height: 50px;
       }}
 
-      div{
+      > div {
         display: flex;
         gap: 12px;
       }

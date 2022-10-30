@@ -11,18 +11,20 @@ export function Home() {
     <img src={imgProfile} alt="" />
       <section>
         <h1>Sobre Mim</h1>
-        <h2>Minas Gerais - Ribeirão das Neves</h2>
+        <h2>Dev Front-End</h2>
         <p>
-        Desde o primeiro “hello World” me apaixonei pela programação,
-        hoje me esforço todos os dias para me tornar um desenvolvedor 
-        full stack e conquistar minha primeira vaga como junior, sendo 
-        0,01% melhor a cada dia.
+        Desde que escrevi o meu primeiro código
+        e imprimi meu primeiro 'hello world' me
+        apaixonei completamente pela programação, me 
+        esforço todos os dias a fim de obter conhecimento 
+        para conquistar a minha primeira oportunidade, assim
+        indo em busca de me tornar um grande profissional 
+        como desenvolvedor. 
         </p>
-
         <div className='contact'>
-          <h2>Contato</h2>
-          <div>
-            <a
+          <h2>Contato</h2> 
+           <div>
+           <a
             href="https://github.com/douglaSantoSilva" 
             target='_blank'><FiGithub className='iconStyleGit'/>
             GitHub
@@ -36,8 +38,26 @@ export function Home() {
             />
               Linkein
             </a>
-          </div>
-        <a href=""><FiMail className='iconStyleGit'/>douglasantosilvaemail@gmail.com</a>
+          </div> 
+        <form method='post' action="https://formsubmit.co/douglasantosdev@gmail.com">
+          <label htmlFor="name">Nome</label>
+          <input 
+          type="text" 
+          name="name" 
+          placeholder='Name'
+          id='name'
+          required/>
+          <label htmlFor="email">Email</label>
+          <input 
+          type="email" 
+          placeholder='Email'
+          id='email'
+          name="email" 
+          required/>
+          <label htmlFor="message">Deixe sua mensagem</label>
+          <textarea name="message" placeholder='Digite aqui' id='message'></textarea>
+          <button type='submit'>Enviar</button>
+        </form>
         </div>
       </section>
     </Content>  
