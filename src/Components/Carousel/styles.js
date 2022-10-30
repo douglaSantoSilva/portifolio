@@ -79,10 +79,10 @@ a.anchorProject {
 
 .swiper {
   max-width: 330px;
-  max-height: 450px;
+  max-height: 380px;
 }
 .swiper-slide img {
-  height: 480px;
+  height: 380px;
 }
 .swiper-slide a {
   bottom: 60px;

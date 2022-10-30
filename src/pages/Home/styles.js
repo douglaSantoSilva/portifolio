@@ -41,34 +41,43 @@ export const Content = styled.main`
     width: 400px;
     text-align: justify;
     
-    form {
-      display: flex;
-      flex-direction: column;
+  form {
 
-      input, button, textarea {
-        width: 100%;
-        padding: 8px;
-        color: ${({theme}) => theme.COLORS.BACKGROUND_900};
-        background-color: ${({theme}) => theme.COLORS.WHITE_100};
-        border: none;
-        outline: none;
-        border-radius: 10px;
-        font-weight: bold;
-      }
+    fieldset {
+      border: 0;
+    }
 
-      label {
-        margin-bottom: 4px;
-      }
+    input, textarea {
+      margin: 2px 0;
+      outline-color: ${({theme}) => theme.COLORS.BLUE_500};
+    }
 
-      textarea{
-        resize: none;
-        height: 70px;
-      }
+    input, button, textarea {
+      width: 100%;
+      padding: 8px;
+      color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+      background-color: ${({theme}) => theme.COLORS.WHITE_100};
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
 
-      button {
-        background-color: ${({theme}) => theme.COLORS.BLUE_500};
-        margin: 12px 0;
-      }
+    textarea{
+      resize: none;
+      height: 70px;
+    }
+
+    button {
+      background-color: ${({theme}) => theme.COLORS.BLUE_500};
+      margin: 12px 0;
+    }
+
+    legend{
+      font-size: 32px;
+      text-align: center;
+      margin-top: 12px;
+      font-weight: bold;
+    }
     }
 
     h1 {
@@ -77,46 +86,8 @@ export const Content = styled.main`
       font-size: 32px;
     }
 
-    h2:nth-child(1) {
-      text-align: center;
-      margin-top: 12px;
-    }
-
-    h2:nth-child(2) {
+    h2{
       color: ${({theme}) => theme.COLORS.BLUE_500};
-    }
-
-    .contact {
-      h2{
-        font-size: 32px;
-      }
-
-      a, p {
-      display: flex;
-      align-items: center;
-      
-      margin: 8px 0;
-      gap: 6px;
-      color: white;
-
-      img {
-        width: 50px;
-        height: 50px;
-      }}
-
-      > div {
-        display: flex;
-        justify-content: center;
-        gap: 12px;
-      }
-    }
-  }
-
-  .iconStyleGit {
-    font-size: 50px;
-    color: white;
-    > path {
-      fill: #60a5fa;
     }
   }
 `

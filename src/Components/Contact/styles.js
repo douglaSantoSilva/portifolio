@@ -4,7 +4,6 @@ export const Container = styled.button`
     width: 50px;
     height: 50px;
     
-    //posição inicial!
     bottom: 20px;
     right: 24px;
     position: fixed;
@@ -23,7 +22,7 @@ export const Container = styled.button`
 
     > div {
       > a img {
-      background-color: white;
+      background-color: ${({theme}) => theme.COLORS.WHITE};
       border-radius: 50%;
       position: fixed;
       width:  50px;

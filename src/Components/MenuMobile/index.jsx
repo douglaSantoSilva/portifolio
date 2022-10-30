@@ -14,7 +14,6 @@ export function MenuMobile() {
     Fix.classList.toggle('hide')
   }
   
-  
   return(
     <Container className='menuMobile'>
       <NavBar onClick={handleClick}/>

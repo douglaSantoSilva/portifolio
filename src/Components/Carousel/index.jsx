@@ -15,7 +15,7 @@ import "swiper/css/pagination";
 export function Carousel() {
   
   return(
-      <Container className='asdadsasd'>  
+      <Container>  
         <Swiper
           loop={true}
           cssMode={true}
@@ -28,7 +28,7 @@ export function Carousel() {
          
           {imagesProjects.map(image => 
             <SwiperSlide key={image.name}> 
-            <img src={image.name} alt="" /> 
+            <img src={image.name} alt={image.alt} /> 
             <a 
               href={image.url}
               className='anchorProject' 
