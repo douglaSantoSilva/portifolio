@@ -27,7 +27,7 @@ export function Home() {
            <a
             href="https://github.com/douglaSantoSilva" 
             target='_blank'><FiGithub className='iconStyleGit'/>
-            GitHub
+          
             </a>
             <a 
             href="https://www.linkedin.com/in/douglas-santos-ba24a31a5" 
@@ -36,7 +36,7 @@ export function Home() {
             <img 
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" 
             />
-              Linkein
+       
             </a>
           </div> 
         <form method='post' action="https://formsubmit.co/douglasantosdev@gmail.com">

@@ -46,7 +46,7 @@ export const Content = styled.main`
       flex-direction: column;
 
       input, button, textarea {
-        width: 350px;
+        width: 100%;
         padding: 8px;
         color: ${({theme}) => theme.COLORS.BACKGROUND_900};
         background-color: ${({theme}) => theme.COLORS.WHITE_100};
@@ -106,6 +106,7 @@ export const Content = styled.main`
 
       > div {
         display: flex;
+        justify-content: center;
         gap: 12px;
       }
     }
