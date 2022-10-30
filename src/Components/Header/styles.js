@@ -31,14 +31,21 @@ export const Container = styled.header`
     display: none;
   }
 
+  @media (max-width:900px) {
+    h1 {
+      font-size: 28px;
+      margin-right: 15px;
+    }
+}
+
   @media (max-width:750px) {
     .navListHeader {
     display: none;
     }
 
     h1 {
-      font-size: 28px;
-      margin-right: 15px;
+      
+      margin-right: 0px;
     }
 
     .menuMobile{

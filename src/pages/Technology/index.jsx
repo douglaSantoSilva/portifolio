@@ -17,7 +17,7 @@ export function Technology() {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"  alt='logo git'/>      
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt='logo visual studio'/>
         </section>
-      </Content>  
+      </Content>
     </Container>
   )
 }

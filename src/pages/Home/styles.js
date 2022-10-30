@@ -11,6 +11,15 @@ export const Container = styled.div`
     max-width: 500px;
   }
 
+  @media (max-width: 900px) {
+  .homeMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      
+    flex-direction: column;}
+  }
+
   @media (max-width: 750px) {
   .homeMain {
     display: flex;
@@ -69,7 +78,7 @@ export const Content = styled.main`
 
     button {
       background-color: ${({theme}) => theme.COLORS.BLUE_500};
-      margin: 12px 0;
+      margin: 12px 0 80px;
     }
 
     legend{

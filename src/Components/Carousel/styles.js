@@ -75,6 +75,16 @@ a.anchorProject {
   background-color: ${({theme}) => theme.COLORS.BLUE_800};
 }
 
+@media (max-width: 900px) {
+
+.swiper {
+  max-width: 500px;
+  max-height: 440px;
+}
+.swiper-slide img {
+  height: 440px;
+}}
+
 @media (max-width: 750px) {
 
 .swiper {
