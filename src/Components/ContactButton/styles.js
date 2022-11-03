@@ -20,6 +20,7 @@ export const Container = styled.button`
       }
     }
 
+    //background active when press button
     .svgStyle {
       path {
         fill: ${({theme}) => theme.COLORS.BLUE_600};
@@ -35,9 +36,10 @@ export const Container = styled.button`
       height: 50px;
       bottom: 70px;
       right: 20px;
-      animation: contact 700ms forwards;
+      animation: contact 600ms forwards;
     }
 
+    //linkedin svg
     > a:nth-child(1) img{
       background-color:  #0076b2;
     }
