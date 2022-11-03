@@ -39,7 +39,7 @@ export const Container = styled.button`
     }
 
     > a:nth-child(1) img{
-      background-color: ${({theme}) => theme.COLORS.BLUE_800};
+      background-color:  #0076b2;
     }
 
    > a:nth-child(2) {
