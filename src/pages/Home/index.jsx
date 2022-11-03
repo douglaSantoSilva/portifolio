@@ -1,5 +1,5 @@
 import imgProfile from '../../assets/profileDatails.svg'
-import { Contact } from '../../Components/Contact'
+import { ContactButton } from '../../Components/ContactButton'
 import { Header } from '../../Components/Header'
 import { Container, Content} from './styles'
 
@@ -34,7 +34,7 @@ export function Home() {
         </form>
         </div>
       </section>
-      <Contact />
+      <ContactButton />
     </Content>  
   </Container>
   )

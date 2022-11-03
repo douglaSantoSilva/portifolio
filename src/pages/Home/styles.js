@@ -81,6 +81,10 @@ export const Content = styled.main`
       margin: 12px 0 80px;
     }
 
+    button:hover {
+      background-color: ${({theme}) => theme.COLORS.BLUE_600};
+    }
+
     legend{
       font-size: 32px;
       text-align: center;

@@ -2,18 +2,23 @@ import linkedinImg from '../../assets/linkedin.svg'
 import { FiMessageCircle } from 'react-icons/fi'
 import githubImg from '../../assets/github.svg'
 import { Container } from './styles'
+import { useState } from 'react'
 
-function buttonOnClick(){
- const myContact = document.querySelector('.myContact')
 
-  myContact.classList.toggle('hide')
-}
+export function ContactButton() {
+  
+  const [classContact, setClassContact] = useState(false)
+  let toggleClassContact = classContact ? '' : 'hide'
+  let svgStyle = toggleClassContact ? '' : 'svgStyle'
 
-export function Contact() {
+  function handleContactClick(){
+    setClassContact(prevState => !prevState)
+  }
+
   return(
-    <Container onClick={buttonOnClick}>
-      <FiMessageCircle />
-        <div className='myContact hide'>
+    <Container onClick={handleContactClick}>
+      <FiMessageCircle className={svgStyle} />
+        <div className={toggleClassContact}>
 
           <a href="https://www.linkedin.com/in/douglas-santos-ba24a31a5" target='_blank'>
             <img src={linkedinImg} alt="Imagem Logo do Linkedin" />

@@ -20,6 +20,12 @@ export const Container = styled.button`
       }
     }
 
+    .svgStyle {
+      path {
+        fill: ${({theme}) => theme.COLORS.BLUE_600};
+      }
+    }
+
     > div {
       > a img {
       background-color: ${({theme}) => theme.COLORS.WHITE};

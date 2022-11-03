@@ -26,13 +26,12 @@ export function Carousel() {
           modules={[Navigation, Pagination, Mousewheel, Keyboard]}
           className="mySwiper">
          
-          {imagesProjects.map(image => 
-            <SwiperSlide key={image.name}> 
+          {imagesProjects.map((image, index) => 
+            <SwiperSlide key={String(index)}> 
             <img src={image.name} alt={image.alt} /> 
             <a 
               href={image.url}
               className='anchorProject' 
-              icon={FiFolder}
               target="_blank"
               >
               <FiFolder/>
