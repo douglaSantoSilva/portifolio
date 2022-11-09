@@ -13,11 +13,13 @@ export const Container = styled.div`
     > main {
       flex-direction: column;
       padding: 0;
+      gap: 0;
  
       .tecBox {
         margin: 6px;
       }
       > div {
+        margin-bottom: 20px;
         width: 320px;
 
         h2 {
@@ -58,7 +60,7 @@ export const Content = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    
     width: 500px;
 
     h2 {
