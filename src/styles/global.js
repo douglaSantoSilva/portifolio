@@ -28,9 +28,9 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
-  button:hover, a:hover {
+  /* button:hover, a:hover {
     
-  }
+  } */
 
   .hide{
     display: none;

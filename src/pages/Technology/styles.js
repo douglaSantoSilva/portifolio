@@ -12,13 +12,30 @@ export const Container = styled.div`
   @media (max-width: 750px) {
     > main {
       flex-direction: column;
+      padding: 0;
+ 
+      .tecBox {
+        margin: 6px;
+      }
+      > div {
+        width: 320px;
 
+        h2 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size:  16px;
+        }
+      }
      > section {
-    width: 300px;
+      justify-content: center;
+      padding: 0 0 8px;
+      width: 320px;
 
     img {
-      width: 60px;
-      height: 60px;
+      width: 45px;
+      height: 45px;
     }}
 
     > img {
@@ -36,24 +53,30 @@ export const Content = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 500px;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 22px;
+    }
+  }
 
   > section {
-    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
     padding: 28px;
-
-    border: 1px solid white;
-    border-radius: 50px;
-    img {
-      margin: 10px;
-      width: 100px;
-      height: 100px;
-    }
-
-    .github{
-    background-color: white;
-    color: blue;
-
-    }
+    
   }
 
   > img {

@@ -1,21 +1,45 @@
 import { Header } from '../../Components/Header'
 import {Container, Content} from './styles'
+import {TechnologyBox} from '../../Components/TechnologyBox'
+import { ImgTechs } from '../../Components/ImageProjectsExport/index'
 
 export function Technology() {
+  
+  function handleChangeText(text, title) {
+    const textDiv = document.querySelector("p.tecContent")
+    const textH2 = document.querySelector("h2.tecContent")
+
+    textDiv.textContent = text
+    textH2.textContent = title
+  }
+
+  function handleEmpty() {
+    const textDiv = document.querySelector("p.tecContent")
+    const textH2 = document.querySelector("h2.tecContent")
+
+    textDiv.textContent = "Passe o mouse por cima da tecnologia para obter mais informações."
+    textH2.textContent = "Tecnologias"
+  }
+  
   return(
     <Container>
       <Header />
       <Content>
-        <img src='https://raw.githubusercontent.com/Sabyasachi-Seal/Sabyasachi-Seal/ouput/coder.gif' alt="gif de uma pessoa usando o computador" />
+        <div>
+          <h2 className='tecContent'>Tecnologias</h2>
+          <p className='tecContent'>Passe o mouse por cima da tecnologia para obter mais informações.</p>
+        </div>
         <section>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt='logo javascript'/> 
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt='logo css3'/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt='logo html5'/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt='logo nodejs'/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"  alt='logo react'/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"  alt='logo sqlite'/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"  alt='logo git'/>      
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt='logo visual studio'/>
+          {
+            ImgTechs.map((img, index) => (
+              <TechnologyBox 
+                src={img.name} 
+                key={String(index)} 
+                onMouseOver={() => handleChangeText(img.description, img.title)} 
+                onMouseLeave={handleEmpty}  
+              />
+            ))
+          }   
         </section>
       </Content>
     </Container>

@@ -54,6 +54,10 @@ export const Container = styled.div`
   background-color: ${({theme}) => theme.COLORS.BLUE_400};
 }
 
+.swiper-slide a:hover {
+  background-color: ${({theme}) => theme.COLORS.BLUE_500};
+}
+
 .anchorProject {
  svg{
   font-size: 24px;
