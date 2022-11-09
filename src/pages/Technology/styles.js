@@ -19,7 +19,7 @@ export const Container = styled.div`
         margin: 6px;
       }
       > div {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         width: 320px;
 
         h2 {
