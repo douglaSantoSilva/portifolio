@@ -1,5 +1,7 @@
 <img src="https://img.shields.io/static/v1?label=Projeto&message=Portifolio&color=38bdf8&style=for-the-badge&logo=ghost"/>
 
+# Em construção 🚧
+
 ## Portifólio
 
 Criação do meu primeiro portifólio 🌟
@@ -13,7 +15,7 @@ Criação do meu primeiro portifólio 🌟
 ## Layout 🎨
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/107257951/198895560-8be5d199-e49a-4576-9f2e-b2cb271aaa8a.gif" alt="" width="70%" height="70%">
+  <img src="" alt="">
 </div>
 
 [Clique aqui para ver o Projeto! 🔎](https://portifolio-douglasantosilva.vercel.app/)
