@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
-  grid-template-rows: 120px auto;
+  grid-template-rows: 90px 100%;
   grid-template-areas: 
   "header"
   "content";
@@ -29,11 +29,15 @@ export const Container = styled.div`
     flex-direction: column;
     
     > section {
-      width: 350px;
+      width: 300px;
+
+      h1 {
+        font-size: 32px;
+      }
     }
 
     > img {
-      width: 60%;
+      width: 70%;
     }
     }
   }
@@ -42,65 +46,27 @@ export const Container = styled.div`
 export const Content = styled.main`
   grid-area: content;
   display: flex;
+  align-items: center;
 
   margin: 40px auto 0;
   gap: 50px;
 
   > section {
-    width: 400px;
-    text-align: justify;
-    
-  form {
-
-    fieldset {
-      border: 0;
-    }
-
-    input, textarea {
-      margin: 2px 0;
-      outline-color: ${({theme}) => theme.COLORS.BLUE_500};
-    }
-
-    input, button, textarea {
-      width: 100%;
-      padding: 8px;
-      color: ${({theme}) => theme.COLORS.BACKGROUND_900};
-      background-color: ${({theme}) => theme.COLORS.WHITE_100};
-      border: none;
-      border-radius: 10px;
-      font-weight: bold;
-    }
-
-    textarea{
-      resize: none;
-      height: 70px;
-    }
-
-    button {
-      background-color: ${({theme}) => theme.COLORS.BLUE_500};
-      margin: 12px 0 80px;
-    }
-
-    button:hover {
-      background-color: ${({theme}) => theme.COLORS.BLUE_600};
-    }
-
-    legend{
-      font-size: 32px;
-      text-align: center;
-      margin-top: 12px;
-      font-weight: bold;
-    }
-    }
+    width: 500px;
 
     h1 {
-      text-align: center;
+      text-align: start;
       font-weight: 700;
-      font-size: 32px;
+      font-size: 42px;
+
+      span {
+        color: ${({theme}) => theme.COLORS.BLUE_500};
+      }
     }
 
-    h2{
-      color: ${({theme}) => theme.COLORS.BLUE_500};
+    p {
+      font-size: 16px;
+      line-height: 26px;
     }
   }
 `

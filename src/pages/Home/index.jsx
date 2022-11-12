@@ -1,7 +1,7 @@
 import imgProfile from '../../assets/profileDatails.svg'
-import { ContactButton } from '../../Components/ContactButton'
 import { Header } from '../../Components/Header'
 import { Container, Content} from './styles'
+import { ContactButton } from '../../Components/ContactButton'
 
 export function Home() {
   return(
@@ -9,33 +9,26 @@ export function Home() {
     <Header />
     <Content className='homeMain'>
     <img src={imgProfile} alt="desenho de um rapaz ao lado dele um quadrado com um campo de perfil de usuário." />
+      
       <section>
-        <h1>Sobre Mim</h1>
-        <h2>Dev Front-End</h2>
+        <h1>
+          Olá! meu nome é <br/> 
+          <span>Douglas </span> <br/> 
+           sou
+          <span> Dev Front-End</span>.
+        </h1>
+        
         <p>
-        Desde que escrevi o meu primeiro código e imprimi meu 'hello world'
-        me apaixonei completamente pela programação. Hoje me esforço todos
-        os dias, a fim de aprimorar minhas habilidades, em busca de ser um
+        Todos os dias me esforço a fim de aprimorar 
+        minhas habilidades, em busca de ser um
         excelente profissional e conquistar a minha primeira oportunidade 
         como dev.
         </p>
-        <div className='contact'>
-        <form method='post' action="https://formsubmit.co/douglasantosdev@gmail.com">
-          <fieldset>
-            <legend>Contato</legend>
-              <label htmlFor="name">Nome</label>
-              <input type="text" name="name" placeholder='Name'id='name'required/>
-              <label htmlFor="email">Email</label>
-              <input type="email" placeholder='Email'id='email'name="email" required/>    
-              <label htmlFor="message">Mensagem</label>
-              <textarea name="message" placeholder='Digite aqui' id='message'></textarea>
-          </fieldset>
-          <button type='submit'>Enviar</button>
-        </form>
-        </div>
-      </section>
-      <ContactButton />
-    </Content>  
+
+      </section>        
+    </Content> 
+
+    <ContactButton />
   </Container>
   )
 }
