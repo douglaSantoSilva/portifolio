@@ -16,14 +16,15 @@ export const Container = styled.div`
       gap: 0;
  
       .tecBox {
-        margin: 6px;
+        margin: 8px;
       }
+
       > div {
         margin-bottom: 40px;
         width: 320px;
 
         h2 {
-          font-size: 24px;
+          font-size: 32px;
         }
 
         p {
@@ -35,10 +36,7 @@ export const Container = styled.div`
       padding: 0 0 8px;
       width: 320px;
 
-    img {
-      width: 45px;
-      height: 45px;
-    }}
+    }
 
     > img {
     width: 300px;
@@ -48,7 +46,6 @@ export const Container = styled.div`
 `
 
 export const Content = styled.main`
-  height: 100%;
   padding: 24px;
   gap: 28px;
 
@@ -56,7 +53,10 @@ export const Content = styled.main`
   justify-content: center;
   align-items: center;
   
+  grid-area: content;
+
   > div {
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,6 +79,9 @@ export const Content = styled.main`
     width: 500px;
     padding: 28px;
     
+    img {
+      padding: 8px;
+    }
   }
 
   > img {
