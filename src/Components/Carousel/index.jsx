@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export function Carousel() {
-  
+
   return(
       <Container>  
         <Swiper

@@ -3,15 +3,15 @@ import styled from "styled-components";
 export const Container = styled.div`
 
   display: grid;
-  grid-template-rows: 90px auto;
+  grid-template-rows: 90px 100%;
   grid-template-areas: 
   "header"
   "content";
 
   > main {
-    height: 100%;
     grid-area: content;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
   }
 `
 
@@ -20,12 +20,6 @@ export const Content = styled.section`
  
  > div {
   margin-top: 38px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  
   }
 `
 
