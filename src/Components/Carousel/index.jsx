@@ -17,7 +17,7 @@ export function Carousel() {
   return(
       <Container>  
         <Swiper
-          loop={true}
+          loop={false}
           cssMode={true}
           navigation={true}
           pagination={true}
